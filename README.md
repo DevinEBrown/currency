@@ -1,2 +1,2 @@
-# currency-
+# Currency
 JS calculating currency. 
