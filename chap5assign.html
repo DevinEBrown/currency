@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter 5 Assignment</title>
+
+<script>
+		
+		var usa_dollars  = prompt("What is US Dollar amount?","");
+
+		var eur_rate = 1.109615 //Europe
+		var gbp_rate = 1.320511 //British pound
+		var cad_rate = 0.755507 //Canadian dollar
+		var aud_rate = 0.668995 //Australian 
+		var sgd_rate = 0.732718 //Singapore 
+		
+		function calc_exchange(usa_dollars, rate){
+		return (usa_dollars * rate).toFixed(2);		
+}
+			
+</script>
+</head>
+<style>
+	body{
+		background-color: orange;
+	}
+
+	img{
+		width: 20px;
+		height: 20px;
+	}
+	
+</style>
+<body>
+<script>
+			
+			document.write("$" + usa_dollars + " in US Dollars is equivalent to:</br>");
+	
+			document.write("$" + calc_exchange(usa_dollars, eur_rate)  + " EUR (Euros) <img src ='images/euro.jpg'></br>");
+			document.write("$" + calc_exchange(usa_dollars, gbp_rate)  + " GBP (British Pound)<img src = 'images/brit.jpg'></br>");
+			document.write("$" + calc_exchange(usa_dollars, cad_rate)  + " CAD (Canadian Dollar)<img src = 'images/cad.jpg'></br>");
+			document.write("$" + calc_exchange(usa_dollars, aud_rate)  + " AUD (Australian Dollar) <img src = 'images/aus.gif'></br>");
+			document.write("$" + calc_exchange(usa_dollars, sgd_rate)  + " SGD (Singapore Dollar)<img src = 'images/sing.jpg'></br>");
+		
+	
+</script>
+	
+
+</body>
+</html>
